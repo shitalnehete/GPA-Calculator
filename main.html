@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+			width: auto;
+            margin: 0;
+            padding: 0;
+            font face: Montserrat;
+            background: #f4f7f8;
+            color: #37474F;
+        }    
+        .wrap{
+			max-width: 460px;
+            width: auto;
+            overflow: hidden;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border: 3px solid #CFD8DC;
+            border-radius: 8px;
+        }
+        .wrap .ans{
+			width: 227px;
+            margin-left: 5px;
+        }
+        
+        
+        .wrap p1{
+            font-size: 12px;
+            font face: Montserrat;
+            color: black;
+			width: 200px;
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
+         .wrap p{
+            font-size: 12px;
+            font style: bold;
+            font face: Montserrat;
+            color: #7b8b8e;
+            margin-bottom: 20px;
+	margin-left: 5px; 
+        }
+        .wrap input{
+            font-family: quicksand heavy;
+            color: #25e085;
+            font-size: 13px;
+            text-align: center;
+            width:96px;
+            height: 35px;
+            margin-bottom: 10px;
+            border: 3px solid #ddeeeb;
+            border-radius: 3px;
+            padding: 5px;   
+        }
+		
+		.wrap .btn-link{
+			width: 220px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid #5D6D7E;
+            border-radius: 3px;
+            padding: 7px; 
+            font-family: quicksand heavy;
+            font-size: 15px;
+            color: #5D6D7E;
+            transition: all 0.5s;
+            margin-bottom: 10px;
+			margin-right: 15px;
+			position: relative;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+		}
+		
+        .wrap .btn-link:hover{
+			width: 200px;
+			height: 45px;
+            box-shadow: 1px 1px 10px #eaeded;
+            background: #34495E;
+			border: 2px solid #34495E;
+            color: white;
+        }
+        
+        .w3-btn{
+            width: 198px;
+            height: 45px;
+            background: transparent;
+            border: 2px #5DADE2;
+            border-style: solid;
+            border-radius: 3px;
+            padding: 5px; 
+            font-family: quicksand heavy;
+            font-size: 14px;
+            color: #5dade2;
+            transition: all 0.3s;
+            margin-bottom: 10px;
+            -webkit-transition-duration: 0.2s;
+            -moz-transition-duration: 0.2s;
+            }
+            .w3-btn:hover {
+            width: 200px;
+            margin-right: 10px;
+            color: #fff;
+            border: 2px solid #1ABC9C;
+            background: #1ABC9C;
+            box-shadow: 2px 2px 20px #AFE9FF;
+            }
+        .w3-button{ 
+			width: 220px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid #73C6B6;
+            border-radius: 3px;
+            padding: 7px; 
+            font-family: quicksand heavy;
+            font-size: 15px;
+            color: #73C6B6;
+            transition: all 0.5s;
+            margin-bottom: 10px;
+			margin-right: 15px;
+			position: relative;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+        }
+        .w3-button:hover{
+			width: 200px;
+			height: 48px;
+            box-shadow: 0px 0px 20px #f4f7f8;
+            background: #5499C7;
+			border: 2px solid #5499C7;
+            color: white;
+        }
+	
+		
+		@media screen and (max-width:459px){
+			
+			table{
+				display: block;
+				width: 100%;
+			}
+			
+			td{
+				display: block;
+				width: 100%
+			}
+			tr{
+				display: block;
+				width: 100%;
+			}
+			input[type=number], textarea {
+				width:100%;
+    		}
+				
+		}
+		
+		
+		
+    </style>
+    </head>
+<body> 
+	
+<div class="wrap">
+    
+		<form name="calculator" method="post">
+			<table width="352px">
+        <tr>
+			<td><button class="w3-button" type="reset" value="reset">Reset</button></td>
+			<td><INPUT class="btn-link" TYPE="button" onClick="parent.location='http://www.brainheaters.in/pricing.html'" value="Start Studying"></td>	
+				</tr>
+			</table> 
+			<p align="center"> Note - Please Enter the SGPI of particular Sem and "0" for empty blocks ( If any ) .
+        <table width="458px">
+		<tbody>
+        <tr>
+			<td><input type="number" id="1" placeholder="Sem 1"></td>
+			<td><input type="number" id="2" placeholder="Sem 2"></td>
+			<td><input type="number" id="3" placeholder="Sem 3"></td>
+			<td><input type="number" id="4" placeholder="Sem 4"></td>
+		</tr>
+        
+		<tr>
+			<td><input type="number" id="5" placeholder="Sem 5"></td>
+			<td><input type="number" id="6" placeholder="Sem 6"></td>
+			<td><input type="number" id="7" placeholder="Sem 7"></td>
+			<td><input type="number" id="8" placeholder="Sem 8"></td>
+		</tr>
+        </tbody>
+		</table>
+    
+		</form>
+	
+        <table width="458px">
+			<tbody>
+            <tr>
+				<td><button class="w3-btn" onclick="average()" value="average">Calculate CGPA</button></td>
+				<td><input type="text" class="ans" id ="avg" placeholder="Your CGPA Score !" readonly></td>
+			</tr>
+			</tbody>
+		</table>
+        
+    <table width="458px">
+    <tr><td>
+        <button class="w3-btn" onclick="percentage()"value="percentage">Calculate Percentage</button></td>    
+        <td><input class="ans" type="text" id ="9" placeholder="Your Percentage !" readonly></td></tr>
+    </table>
+    <p align="center"> Handcrafted by Brainheaters | Calculations are srtictly as per University rules!<br>If Values are not reset properly "Reload is Recommended for precise results"</p>    
+</div>
+
+	
+	
+	
+	
+	
+	
+	
+<script type "text/javascript">
+function average(){
+    var a=parseFloat(document.getElementById("1").value);
+    var b=parseFloat(document.getElementById("2").value);
+    var c=parseFloat(document.getElementById("3").value);
+    var d=parseFloat(document.getElementById("4").value);
+    var e=parseFloat(document.getElementById("5").value);
+    var f=parseFloat(document.getElementById("6").value);
+    var g=parseFloat(document.getElementById("7").value);
+    var h=parseFloat(document.getElementById("8").value);
+    if(a,b,c,d,e,f,g,h !== 0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/8);}
+                      document.getElementById('avg').value=afinal;
+        if(h==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/7);}
+                      document.getElementById('avg').value=afinal;
+        if(h==0 && g==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/6);}
+                      document.getElementById('avg').value=afinal;
+        if(h,g == 0 && f==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/5);}
+                      document.getElementById('avg').value=afinal;
+        if(h,g,f == 0 && e==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/4);}
+                      document.getElementById('avg').value=afinal;
+        if(h,g,f,e == 0 && d==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/3);}
+                      document.getElementById('avg').value=afinal;
+        if(h,g,f,e,d == 0 && c==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/2);}
+                      document.getElementById('avg').value=afinal;
+        if(h,g,f,e,d,c == 0 && b==0) 
+            { var afinal=((a+b+c+d+e+f+g+h)/1);}
+                      document.getElementById('avg').value=afinal;
+       
+}
+function percentage()
+    { 
+       
+    var i=parseFloat(document.getElementById("avg").value);    
+    if(i < 7.00){ 
+    var per = ((i * 7.1)+12);
+    document.getElementById('9').value=per;
+    }
+    else{     
+    var per = ((i * 7.4)+12);
+    document.getElementById('9').value=per;
+        }
+    }   
+</script>   
+    </body>
+</html>
+
