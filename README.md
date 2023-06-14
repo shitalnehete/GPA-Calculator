@@ -14,5 +14,5 @@ To use the GPA Averaging and Percentage Calculation web application, simply acce
 Please refer to the code provided in this repository for more information on the implementation details of the web application.
 
 ## User-interface
-<img src="Screenshot1.png" alt="Screen 1" title="Screen 1">
-<img src="Screenshot2.png" alt="Screen 2" title="Screen 2">
+<img src="Screenshot1.png" alt="Screen 1" title="Screen 1" width="200" height="400">
+<img src="Screenshot2.png" alt="Screen 2" title="Screen 2" width="200" height="400">
